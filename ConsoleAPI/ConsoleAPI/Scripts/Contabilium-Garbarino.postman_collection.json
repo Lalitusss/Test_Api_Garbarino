@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "9be68ff7-8b2b-42d3-846a-00798befa717",
+		"name": "Contabilium-Garbarino",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_PUBLICACIONES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Publicaciones/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Publicaciones",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_PUBLICACIONES + ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Publicaciones/170",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Publicaciones",
+						"170"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_VENTAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Ventas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Ventas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_VENTAS + PARAMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Ventas/1/10/CREATED_ASC/BILLED/8533591/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Ventas",
+						"1",
+						"10",
+						"CREATED_ASC",
+						"BILLED",
+						"8533591",
+						"31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ENVIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Envios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Envios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_ENVIOS + PARAMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Envios/A000352237,aaaaaa/GarbarinoQa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Envios",
+						"A000352237,aaaaaa",
+						"GarbarinoQa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_PUBLICACIONES + PARAMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Publicaciones/1/10/PUBLISHED, APPROVED/CREATED_ASC/false/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Publicaciones",
+						"1",
+						"10",
+						"PUBLISHED, APPROVED",
+						"CREATED_ASC",
+						"false",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_USUARIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Usuario"
+					]
+				},
+				"description": "GET_USUARIO"
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE_PRECIO + PARAMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Publicaciones/220/price/670.08/950.10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Publicaciones",
+						"220",
+						"price",
+						"670.08",
+						"950.10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE_STOCK + PARAMS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:44336/api/Publicaciones/220/stock/50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"api",
+						"Publicaciones",
+						"220",
+						"stock",
+						"50"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
